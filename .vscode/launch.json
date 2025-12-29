@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter App",
+            "cwd": "${input:flutterApp}",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Flutter App (Profile)",
+            "cwd": "${input:flutterApp}",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Flutter App (Release)",
+            "cwd": "${input:flutterApp}",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+    ],
+    "inputs": [
+        {
+            "id": "flutterApp",
+            "type": "pickString",
+            "description": "Select which Flutter app to run",
+            "options": [
+                {
+                    "label": "basics",
+                    "value": "basics"
+                },
+                {
+                    "label": "first_app",
+                    "value": "first_app"
+                },
+                {
+                    "label": "adv_basics",
+                    "value": "adv_basics"
+                }
+            ],
+            "default": "first_app"
+        }
+    ]
+}
